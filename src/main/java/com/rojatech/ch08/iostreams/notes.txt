@@ -1,0 +1,3 @@
+Read this notes to understand the features of this applications.
+online management system.
+cloud platform.
