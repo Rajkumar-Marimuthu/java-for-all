@@ -1,10 +1,6 @@
 package com.rojatech.ch02.collections.set;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 public class HashSetDemo {
 
@@ -19,8 +15,11 @@ public class HashSetDemo {
 		}
 		System.out.println(list);
 		
-		Set<Integer> set = new HashSet<>(list);
+		Set<Integer> set = new HashSet<>(list); // does not maintain order
 		System.out.println(set);
+
+		Set<Integer> lset = new LinkedHashSet<>(list); // maintains insertion order
+		System.out.println(lset);
 		
 	}
 
