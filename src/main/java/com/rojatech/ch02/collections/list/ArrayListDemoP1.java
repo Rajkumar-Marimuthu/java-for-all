@@ -17,6 +17,8 @@ public class ArrayListDemoP1 {
 		// If the array is not big enough, a new, larger array is created to replace the old one and the old one is removed.
 
 		List<Integer> values1 = new ArrayList<>();
+		// Note: Java collections can only be used with Object types, not primitive types.
+		// Here, int is a primitive type, so it is autoboxed to Integer.
 		values1.add(3);
 		values1.add(10);
 		values1.add(8);
