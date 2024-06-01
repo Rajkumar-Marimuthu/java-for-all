@@ -1,5 +1,6 @@
 package com.rojatech.ch01.datatypes.intro;
 
+import com.rojatech.ch03.java8.streams.Calculator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

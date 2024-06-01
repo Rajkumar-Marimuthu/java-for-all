@@ -1,4 +1,4 @@
-package com.rojatech.ch01.datatypes.generics;
+package com.rojatech.ch01.datatypes.generics.simple;
 
 public class GenericsDemo {
 

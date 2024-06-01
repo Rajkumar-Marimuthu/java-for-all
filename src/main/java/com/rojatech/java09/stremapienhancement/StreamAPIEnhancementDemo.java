@@ -16,9 +16,9 @@ public class StreamAPIEnhancementDemo {
 		System.out.println(taken); // [10, 50]
 		
 		List<Integer> dropped = list.stream().dropWhile(n -> (n%5==0)).collect(Collectors.toList());
-		System.out.println(dropped); // [13, 15, 28]
+		System.out.println(dropped); // [13, 15, 28, nul]
 		
-		System.out.println(list.stream().flatMap(n -> Stream.ofNullable(n)).collect(Collectors.toList()));
+		System.out.println(list.stream().flatMap(Stream::ofNullable).collect(Collectors.toList()));
 		
 	}
 

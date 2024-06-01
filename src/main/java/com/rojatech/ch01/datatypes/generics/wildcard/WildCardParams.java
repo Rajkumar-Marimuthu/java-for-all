@@ -1,4 +1,4 @@
-package com.rojatech.ch01.datatypes.generics;
+package com.rojatech.ch01.datatypes.generics.wildcard;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,7 @@ public class WildCardParams {
 		l.add(new B());
 	}
 	
-	public static void main() {
+	public static void main(String[] args) {
 		WildCardParams wcp = new WildCardParams();
 		wcp.myMethod(new ArrayList<A>());
 	}

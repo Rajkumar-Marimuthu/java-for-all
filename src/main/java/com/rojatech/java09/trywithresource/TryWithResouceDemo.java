@@ -7,7 +7,7 @@ public class TryWithResouceDemo {
 		
 		try(myWorker) {
 			myWorker.doSomething();
-		} catch(Exception e) {
+		} catch(Exception ignored) {
 			
 		}
 	}

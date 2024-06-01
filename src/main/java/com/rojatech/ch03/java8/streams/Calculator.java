@@ -1,4 +1,4 @@
-package com.rojatech.ch01.datatypes.intro;
+package com.rojatech.ch03.java8.streams;
 
 import java.util.stream.DoubleStream;
 

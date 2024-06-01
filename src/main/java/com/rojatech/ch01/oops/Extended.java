@@ -11,7 +11,7 @@ class Base {
 // child class
 public class Extended extends Base {
 	
-	public String myField = "exteneded";
+	public String myField = "extended";
 	/*
 	 * public String myMethod() { return "Bar"; }
 	 */
@@ -25,7 +25,7 @@ public class Extended extends Base {
 		System.out.println(Base.myMethod());
 		
 		System.out.println(extended.myField);
-		System.out.println(extended.myMethod());
+		System.out.println(myMethod());
 	}
 
 }
