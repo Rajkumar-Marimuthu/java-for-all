@@ -1,23 +1,17 @@
-// Java program to illustrate Cloneable interface
 package com.rojatech.ch01.interfaces;
 
+import lombok.AllArgsConstructor;
 
 import java.lang.Cloneable;
 
 // By implementing Cloneable interface
 // we make sure that instances of class A
 // can be cloned.
+@AllArgsConstructor
 class A implements Cloneable
 {
 	int i;
 	String s;
-
-	// A class constructor
-	public A(int i,String s)
-	{
-		this.i = i;
-		this.s = s;
-	}
 
 	// Overriding clone() method
 	// by simply calling Object class
@@ -33,7 +27,7 @@ class A implements Cloneable
 public class CloneableInterfaceDemo {
 
 	public static void main(String[] args) throws CloneNotSupportedException{
-		A a = new A(20, "GeeksForGeeks");
+		A a = new A(20, "Rojatech");
 
 		// cloning 'a' and holding
 		// new cloned object reference in b

@@ -3,7 +3,7 @@ package com.rojatech.ch01.datatypes.string;
 public class StringBufferDemo {
 
 	public static void main(String[] args) {
-		StringBuffer sb = new StringBuffer();
+		StringBuffer sb = new StringBuffer(); // Synchronized. Thread safe.
 		System.out.println(sb.capacity());
 		sb.append("hello, how are you?");
 		System.out.println(sb.capacity());

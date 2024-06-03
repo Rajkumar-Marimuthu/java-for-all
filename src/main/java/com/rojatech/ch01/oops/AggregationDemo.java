@@ -1,48 +1,32 @@
 package com.rojatech.ch01.oops;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@AllArgsConstructor
 class Student {
     String name;
     int id;
     String dept;
- 
-    Student(String name, int id, String dept)
-    {
-        this.name = name;
-        this.id = id;
-        this.dept = dept;
-    }
 }
  
 // Department class contains list of student objects
 // It is associated with student class through its Objects
+@AllArgsConstructor
+@Getter
 class Department {
     String name;
     private List<Student> students;
-    Department(String name, List<Student> students)
-    {
-        this.name = name;
-        this.students = students;
-    }
- 
-    public List<Student> getStudents()
-    {
-        return students;
-    }
 }
  
 //  Institute class contains list of Department Objects. It is associated with Department class through its Objects
+@AllArgsConstructor
 class Institute {
     String instituteName;
     private List<Department> departments;
 
-    Institute(String instituteName,List<Department> departments)
-    {
-        this.instituteName = instituteName;
-        this.departments = departments;
-    }
- 
     // Counting total students of all departments in a given institute
     public int getTotalStudentsInInstitute()
     {

@@ -12,15 +12,15 @@ public class WrapperExample {
 		System.out.println(y);
 		
 		String str = Integer.toString(x);
-		System.out.println("str : " + str);
-		int z = Integer.parseInt(str);
-		System.out.println(z);
-		Integer si = Integer.valueOf(str);
-		System.out.println(si);
+		System.out.println("str : " + str); // str : 10
+		int z = Integer.parseInt(str); // returns primitive int
+		System.out.println(z); // 10
+		Integer si = Integer.valueOf(str); // returns Integer object
+		System.out.println(si); // 10
 
 		// int c = Integer.parseInt("C"); // throws exception. Arguments should be Decimal characters
 		int c = Integer.parseInt("101");
-		System.out.println(c);
+		System.out.println(c); // 101
 	}
 
 }
