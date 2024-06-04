@@ -1,9 +1,8 @@
-import com.rojatech.javachallenges.list.Customer;
+package com.rojatech.javachallenges.list;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -11,13 +10,13 @@ public class JavaArraySortingDemo {
 	
 	public void sortByBirthday(List<Customer> customersList) {
 		
-		Collections.sort(customersList, new Comparator<Customer>() {
+		customersList.sort(new Comparator<Customer>() {
 
-			@Override
-			public int compare(Customer cus1, Customer cus2) {
-				return cus1.birthday().compareTo(cus2.birthday());
-			}
-		});
+            @Override
+            public int compare(Customer cus1, Customer cus2) {
+                return cus1.birthday().compareTo(cus2.birthday());
+            }
+        });
 		
 		System.out.println(customersList);
 	}

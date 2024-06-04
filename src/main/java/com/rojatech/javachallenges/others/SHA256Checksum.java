@@ -20,8 +20,6 @@ public class SHA256Checksum {
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();
 		}
-		
-
 	}
 	
 	public static String calculateSHA256Checksum(String input) throws NoSuchAlgorithmException {
@@ -35,5 +33,4 @@ public class SHA256Checksum {
 		}
 		return sb.toString();
 	}
-
 }

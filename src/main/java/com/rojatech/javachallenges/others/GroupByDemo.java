@@ -1,7 +1,6 @@
 package com.rojatech.javachallenges.others;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,7 +11,7 @@ public class GroupByDemo {
 
 	public static void main(String[] args) {
 		
-		List<String> fruits = Arrays.asList("apple", "banana", "mango", "orange", "gua", "apple", "pappya", "apple", "orange", "jackfruit");
+		List<String> fruits = Arrays.asList("apple", "banana", "mango", "orange", "gua", "apple", "pappaya", "apple", "orange", "jackfruit");
 		
 		Map<String, Long> res = fruits.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 		

@@ -17,8 +17,6 @@ public class FilesUpdateDemo {
 			System.out.println(str);
 		} catch (IOException e) {
 			log.info("Exception: ", e);
-
 		}
 	}
-
 }

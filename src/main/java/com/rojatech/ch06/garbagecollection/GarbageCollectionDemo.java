@@ -12,7 +12,6 @@ public class GarbageCollectionDemo {
 		for (int i=0; i<50000; i++) {
 			new GarbageCollectionDemo(i);
 		}
-		
 	}
 
 	@Override

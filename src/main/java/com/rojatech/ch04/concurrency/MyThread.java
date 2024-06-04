@@ -6,7 +6,7 @@ public class MyThread implements Runnable {
 
 	@Override
 	public void run() {
-		System.out.println("Child thread sum calcualtion: ");
+		System.out.println("Child thread sum calculation: ");
 		synchronized(this) {
 			for (int i=1; i<=100; i++) {
 				sum += i;

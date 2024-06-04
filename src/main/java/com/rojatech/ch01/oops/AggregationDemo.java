@@ -52,28 +52,17 @@ public class AggregationDemo {
         Student s4 = new Student("Rahul", 2, "EE");
  
         // Creating a List of CSE Students
-        List<Student> cse_students = new ArrayList<Student>();
- 
-        // Adding CSE students
-        cse_students.add(s1);
-        cse_students.add(s2);
+        List<Student> cse_students = List.of(s1,s2);
  
         // Creating a List of EE Students
-        List<Student> ee_students
-            = new ArrayList<Student>();
- 
-        // Adding EE students
-        ee_students.add(s3);
-        ee_students.add(s4);
+        List<Student> ee_students = List.of(s3,s4);
  
         // Creating objects of EE and CSE class inside
         // main()
-        Department CSE = new Department("CSE", cse_students);
-        Department EE = new Department("EE", ee_students);
+        Department cse = new Department("CSE", cse_students);
+        Department ee = new Department("EE", ee_students);
  
-        List<Department> departments = new ArrayList<Department>();
-        departments.add(CSE);
-        departments.add(EE);
+        List<Department> departments = List.of(cse, ee);
  
         // Lastly creating an instance of Institute
         Institute institute = new Institute("BITS", departments);

@@ -1,30 +1,18 @@
 package com.rojatech.ch01.oops;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
 class Bank {
     private String name;
-
-    Bank(String name)
-    {
-        this.name = name;
-    }
- 
-    // Method of Bank class
-    public String getBankName()
-    {
-        return this.name;
-    }
 }
 
+@AllArgsConstructor
+@Getter
 class Employee {
     private String name;
-    Employee(String name)
-    {
-        this.name = name;
-    }
- 
-    public String getEmployeeName()
-    {
-        return this.name;
-    }
 }
 
 public class AssociationDemo1 {
@@ -33,13 +21,9 @@ public class AssociationDemo1 {
         // Creating objects of bank and Employee class
         Bank bank = new Bank("ICICI");
         Employee emp = new Employee("Ridhi");
- 
-        // Print and display name and
-        // corresponding bank of employee
-        System.out.println(emp.getEmployeeName()
+
+        System.out.println(emp.getName()
                            + " is employee of "
-                           + bank.getBankName());
-
+                           + bank.getName());
 	}
-
 }

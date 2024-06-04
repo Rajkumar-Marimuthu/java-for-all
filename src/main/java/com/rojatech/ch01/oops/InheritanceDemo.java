@@ -24,22 +24,15 @@ class Organization {
 }
 
 class College extends Organization {
-
 	public College() {
 		super();
 	}
-	
 }
 
 public class InheritanceDemo {
-
 	public static void main(String[] args) {
-		
 		Organization srm = new College();
 		srm.setLocation("Chennai");
 		System.out.println(srm.toString());
-		
-
 	}
-
 }

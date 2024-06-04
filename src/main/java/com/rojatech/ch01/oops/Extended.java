@@ -2,6 +2,7 @@
 package com.rojatech.ch01.oops;
 
 class Base {
+	// fields are not subject to polymorphism
 	protected String myField = "base";
 	protected static Object myMethod() {
 		return "Foo2";
@@ -12,9 +13,6 @@ class Base {
 public class Extended extends Base {
 	
 	public String myField = "extended";
-	/*
-	 * public String myMethod() { return "Bar"; }
-	 */
 
 	public static void main(String[] args) {
 		

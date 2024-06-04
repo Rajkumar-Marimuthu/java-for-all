@@ -18,12 +18,10 @@ public class VarDemo {
 		
 		var myDict = new HashMap<String, List<String>>();
 		myDict.put("RBC", Arrays.asList("Wokingham", "Reading", "Newbury"));
-		myDict.put("LBC", Arrays.asList("City of London", "Hounslou", "Paddington"));
+		myDict.put("LBC", Arrays.asList("City of London", "Honslou", "Paddington"));
 		
 		for (var entry : myDict.entrySet()) {
 			System.out.println(entry);
 		}
-
 	}
-
 }
