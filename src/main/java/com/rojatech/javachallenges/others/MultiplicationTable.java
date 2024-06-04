@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class LoopOne {
+public class MultiplicationTable {
 
     public static void main(String[] args) throws NumberFormatException, IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));

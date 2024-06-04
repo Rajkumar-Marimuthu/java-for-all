@@ -1,7 +1,5 @@
 package com.rojatech.ch02.collections.list;
 
-import com.rojatech.ch09.others.ArraysUtil;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -22,6 +20,5 @@ public class SortedListDemo2 {
 
         strList.sort(Comparator.comparingInt(orderMap::get));
         System.out.println(strList);
-
     }
 }

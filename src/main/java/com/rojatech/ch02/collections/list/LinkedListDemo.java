@@ -25,13 +25,7 @@ public class LinkedListDemo {
 		} */
 		
 		// removal using iterator will work fine.
-		Iterator<String> it = ll.iterator();
-		while(it.hasNext()) {
-			String city = it.next();
-			if (city.equals("Chennai")) {
-				it.remove();
-			}
-		}
+        ll.removeIf(city -> city.equals("Chennai"));
 		System.out.println("after removal list : " + ll); // [Newyork, Paris, London]	
 	}
 }

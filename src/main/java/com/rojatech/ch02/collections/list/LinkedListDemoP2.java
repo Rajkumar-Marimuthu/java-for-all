@@ -19,7 +19,7 @@ public class LinkedListDemoP2 {
 		ll.addFirst("Mr.");
 		ll.addLast("B.E");
 
-		ll.forEach(v -> System.out.println(v));
+		ll.forEach(System.out::println);
 
 		// List of String definition
 		List<String> words = Arrays.asList("Hello", "how", "are");

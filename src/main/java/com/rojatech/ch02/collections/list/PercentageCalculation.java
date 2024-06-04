@@ -4,19 +4,11 @@ import java.util.List;
 
 public class PercentageCalculation {
 
-	public double calculateAverage(List<Integer> marks) {
-		
-		return marks.stream().mapToInt(m -> m).average().getAsDouble();
-		
+	public static double calculateAverage(List<Integer> marks) {
+		return marks.stream().mapToInt(m -> m).average().orElse(Double.NaN);
 	}
 	public static void main(String[] args) {
-		
 		List<Integer> markList = Arrays.asList(87,91,83,99,86);
-		
-		PercentageCalculation pc = new PercentageCalculation();
-		
-		System.out.println(pc.calculateAverage(markList));
-
+		System.out.println(calculateAverage(markList));
 	}
-
 }

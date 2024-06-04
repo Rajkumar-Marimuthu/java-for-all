@@ -7,18 +7,18 @@ import java.util.List;
 public class SortedListDemo {
 
 	public static void main(String[] args) {
-		List<String> list = new ArrayList<String>();
+		List<String> alphabetList = new ArrayList<String>();
 		
-		list.add("A");
-		list.add("Z");
-		list.add("N");
-		list.add("S");
-		list.add("G");
+		alphabetList.add("A");
+		alphabetList.add("Z");
+		alphabetList.add("N");
+		alphabetList.add("S");
+		alphabetList.add("G");
 		
-		Collections.sort(list);
-		System.out.println(list);
+		Collections.sort(alphabetList);
+		System.out.println(alphabetList);
 		
-		int result = Collections.binarySearch(list, "S");
+		int result = Collections.binarySearch(alphabetList, "S");
 		System.out.println(result);
 		
 		// Create a list of strings
@@ -33,13 +33,12 @@ public class SortedListDemo {
         System.out.println("Unsorted List: " + stringList);
 
         // Sort the list of strings in a case-insensitive manner
-        Collections.sort(stringList, String.CASE_INSENSITIVE_ORDER);
+        stringList.sort(String.CASE_INSENSITIVE_ORDER);
 
         // reverse order
-        Collections.sort(stringList, Collections.reverseOrder());
+        stringList.sort(Collections.reverseOrder());
         
         // Print the sorted list
         System.out.println("Sorted List (Case-Insensitive): " + stringList);
 	}
-
 }
