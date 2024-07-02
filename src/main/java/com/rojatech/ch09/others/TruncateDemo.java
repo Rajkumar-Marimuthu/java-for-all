@@ -19,19 +19,15 @@ public class TruncateDemo {
 		return first2Chars.replaceAll("A", "")+remainingChars;
 	}
 
-
 	// E.g MAMA => true, 1234=> false, 1212 => true, 0000=> true, abba=> false
 	public boolean areFirstTwoAndLastTwoCharactersTheSame(String str) {
 		if (str.length() <2) {
 			return false;
 		}
 		String first2Chars = str.substring(0, 2);
-		String last2Chars = str.substring(str.length()-2,str.length());
-		if (first2Chars.equals(last2Chars)) {
-			return true;
-		}
-		return false;
-	}
+		String last2Chars = str.substring(str.length()-2);
+        return first2Chars.equals(last2Chars);
+    }
 	public static void main(String[] args) {
 
 

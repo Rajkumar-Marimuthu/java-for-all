@@ -14,8 +14,6 @@ public class ImmutableCollectionDemo {
 		Set<String> set = Set.of("abc", "xyz");
 		// set.add("123"); // java.lang.UnsupportedOperationException
 		System.out.println(set);
-		
-		
 	}
 
 }

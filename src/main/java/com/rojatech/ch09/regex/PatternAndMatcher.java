@@ -13,11 +13,7 @@ public class PatternAndMatcher {
 			System.out.println(matcher.end());
 			System.out.println(matcher.group());
 		}
-		if (matcher.matches()) {
-			System.out.println(true);
-		} else {
-			System.out.println(false);
-		}
+        System.out.println(matcher.matches());
 	}
 
 }
