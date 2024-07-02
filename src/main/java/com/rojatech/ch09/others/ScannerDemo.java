@@ -15,8 +15,6 @@ public class ScannerDemo {
 		System.out.println(mystr + " " + d);
 		System.out.println(mystr + " " + i);
 
-
-		
 		scanner.close();
 	}
 }
