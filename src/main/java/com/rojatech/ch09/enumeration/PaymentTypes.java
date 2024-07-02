@@ -10,7 +10,6 @@ public enum PaymentTypes {
 	PaymentTypes(int fee) {
 		this.fee = fee;
 	}
-	
 	public int getFee() {
 		return this.fee;
 	}
