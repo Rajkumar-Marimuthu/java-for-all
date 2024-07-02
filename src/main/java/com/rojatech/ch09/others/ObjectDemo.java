@@ -1,12 +1,12 @@
 package com.rojatech.ch09.others;
+
+import lombok.ToString;
+
+@ToString
 class Subject implements Cloneable {
 	int i;
 	int j;
-	@Override
-	public String toString() {
-		return "Subject [i=" + i + ", j=" + j + "]";
-	}
-	
+
 	@Override
 	public Object clone() throws CloneNotSupportedException {
 		return super.clone();
@@ -22,8 +22,7 @@ public class ObjectDemo {
 		s1.j = 10;
 		
 		Subject s2 = s1; // Shallow copy
-		
-		
+
 		Subject s3 = new Subject(); // Deep copy
 		s3.i = s1.i;
 		s3.j = s1.j;
@@ -35,9 +34,6 @@ public class ObjectDemo {
 		System.out.println(s2);
 		System.out.println(s3);
 		System.out.println(s4);
-		
-		
-
 	}
 
 }
