@@ -5,17 +5,14 @@ import lombok.AllArgsConstructor;
 import java.lang.Cloneable;
 
 // By implementing Cloneable interface
-// we make sure that instances of class A
-// can be cloned.
+// we make sure that instances of class A can be cloned.
 @AllArgsConstructor
 class A implements Cloneable
 {
 	int i;
 	String s;
 
-	// Overriding clone() method
-	// by simply calling Object class
-	// clone() method.
+	// Overriding clone() method by simply calling Object class clone() method.
 	@Override
 	protected Object clone()
 			throws CloneNotSupportedException

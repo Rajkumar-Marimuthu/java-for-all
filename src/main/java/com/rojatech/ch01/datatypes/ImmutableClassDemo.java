@@ -1,8 +1,10 @@
 package com.rojatech.ch01.datatypes;
 
-public class ImmutableClassDemo {
+// Once an instance of an immutable class is constructed, its internal state remains constant throughout its lifetime.
+// class marked as final, will prevent sub-classing
+public final class ImmutableClassDemo {
 	
-	int x;
+	final int x;
 	
 	ImmutableClassDemo(int x) {
 		this.x = x;

@@ -1,4 +1,3 @@
-// base class
 package com.rojatech.ch01.oops;
 
 class Base {
@@ -9,7 +8,6 @@ class Base {
 	}
 }
 
-// child class
 public class Extended extends Base {
 	
 	public String myField = "extended";
@@ -20,7 +18,6 @@ public class Extended extends Base {
 		Extended extended = new Extended();
 		
 		System.out.println(base.myField);
-		System.out.println(Base.myMethod());
 		
 		System.out.println(extended.myField);
 		System.out.println(myMethod());
