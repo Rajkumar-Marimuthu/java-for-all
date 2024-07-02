@@ -1,16 +1,15 @@
 package com.rojatech.ch09.designpatterns.decorator;
 
+import lombok.Getter;
+
 public abstract class Beverage {
-	String description = "Unknown Beverage";
+	@Getter
+    String description = "Unknown Beverage";
 	private Boolean milk;
 	private Boolean soy;
 	private Boolean mocha;
 	private Boolean whip;
-	
-	public String getDescription() {
-		return description;
-	}
-	
-	public abstract double cost();
+
+    public abstract double cost();
 	
 }

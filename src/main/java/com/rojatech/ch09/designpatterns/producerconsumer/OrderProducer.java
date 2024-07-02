@@ -4,7 +4,7 @@ import java.util.concurrent.BlockingQueue;
 
 public class OrderProducer implements Runnable {
 
-	private BlockingQueue<String> queue;
+	private final BlockingQueue<String> queue;
 	
 	public OrderProducer(BlockingQueue<String> queue) {
 		this.queue = queue;
