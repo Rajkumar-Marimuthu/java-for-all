@@ -8,7 +8,6 @@ public class ArrayDemo {
 
         // Primitive Array declaration
         int[] intArray2 = new int[]{4, 5, 8, 2, 1, 3};
-        //System.out.println(Arrays.toString(intArray2)); // [4, 5, 8, 2, 1, 3]
 
         // enhanced for loop can also be used to iterate over the elements of an array.
         for (int i : intArray2) {

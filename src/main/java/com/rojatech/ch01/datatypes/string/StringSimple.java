@@ -13,18 +13,10 @@ public class StringSimple {
 		Arrays.stream(splitted).forEach(System.out::println);
 		System.out.println(substr);
 		System.out.println(substr1);
-
 	}
 	public static void main (String[] args) {
 		StringSimple ss = new StringSimple();
 		ss.springSplitSamples();
-		char[] vowels = {'a','e','i','o','u'};
-		String vow = new String(vowels);
-		System.out.println(vow);
-		
-		byte[] ba = {65,66,67};
-		String abc = new String(ba);
-		System.out.println(abc);
 
 		System.out.println("Enter the sentences to split");
 		Scanner scan = new Scanner(System.in);

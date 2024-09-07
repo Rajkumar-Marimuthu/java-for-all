@@ -18,11 +18,6 @@ public class ArraysDemo {
         //Fill array
         Arrays.fill(array, "hello");
         System.out.println(Arrays.toString(array)); // [hello, hello, hello, hello, hello]
-        
-        // Parse array element
-        for (String str : array) {
-            System.out.println(str); // hello
-        }
 
     }
 }

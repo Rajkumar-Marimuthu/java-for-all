@@ -34,7 +34,6 @@ public class TruncateDemo {
 	}
 	public static void main(String[] args) {
 
-
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.rojatech.javachallenges.others;
+package com.rojatech.javachallenges.streams;
 
 import java.util.Arrays;
 import java.util.List;
