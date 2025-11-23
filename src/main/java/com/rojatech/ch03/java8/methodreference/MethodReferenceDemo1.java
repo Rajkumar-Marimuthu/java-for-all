@@ -7,7 +7,7 @@ public class MethodReferenceDemo1 {
 	}
 	
 	public static void main(String[] args) {
-		MyInterface mi = i -> System.out.println(i);
+		MyInterface mi = System.out::println;
 		mi.myMethod(10);
 		
 		MethodReferenceDemo1 md = new MethodReferenceDemo1();

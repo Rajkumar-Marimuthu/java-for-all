@@ -4,7 +4,7 @@ public class MethodReferenceDemo {
 
 	public static void method() {
 		for(int i=0; i<10; i++) {
-			System.out.println("Child Thread ");
+			System.out.println("Child Thread " + i);
 		}
 	}
 	public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class MethodReferenceDemo {
 		th.start();
 		
 		for(int i=0; i<10; i++) {
-			System.out.println("Parent Thread ");
+			System.out.println("Parent Thread " + i);
 		}
 	}
 
