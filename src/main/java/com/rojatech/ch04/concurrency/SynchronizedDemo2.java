@@ -9,7 +9,7 @@ class Counter2 {
 		count++;
 	}
 }
-public class SynchrnoizedDemo2 {
+public class SynchronizedDemo2 {
 
 	public static void main(String[] args) {
 		
@@ -17,13 +17,23 @@ public class SynchrnoizedDemo2 {
 		
 		Thread t1 = new Thread (() -> {
 			for (int i=0; i<1000;i++) {
-				c.increment();
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                c.increment();
 			}
 		},"ThreadOne");
 		
 		Thread t2 = new Thread (() -> {
 			for (int i=0; i<1000;i++) {
-				c.increment();
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                c.increment();
 			}
 		}, "ThreadTwo");
 		

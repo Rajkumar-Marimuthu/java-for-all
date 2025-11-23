@@ -1,6 +1,6 @@
 package com.rojatech.ch04.concurrency;
 
-public class MyThread implements Runnable {
+public class MyRunnable implements Runnable {
 
 	int sum;
 

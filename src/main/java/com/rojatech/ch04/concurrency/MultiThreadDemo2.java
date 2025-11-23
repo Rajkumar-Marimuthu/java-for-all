@@ -7,7 +7,7 @@ class Hi2 extends Thread
 		for (int i=0; i<5; i++) {
 			System.out.println("Hi " + i);
 			try {
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -21,7 +21,7 @@ class Hello2 extends Thread
 		for (int i=0; i<5; i++) {
 			System.out.println("hello " + i);
 			try {
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

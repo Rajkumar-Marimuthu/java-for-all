@@ -15,9 +15,13 @@ public class FunctionDemo {
 		Function<Integer, Integer> doubleIt = i -> i*2;
 		System.out.println(squareMe.andThen(doubleIt).apply(5));
 
-		System.out.println(squareMe.compose(doubleIt).apply(5));
-		System.out.println(Function.identity().apply(5));
+		Integer result1 = squareMe.andThen(doubleIt).apply(5);
+		System.out.println(result1);
 
+		Integer result2 = squareMe.compose(doubleIt).apply(5);
+		System.out.println(result2);
+
+		System.out.println(Function.identity().apply(5));
 
 	}
 

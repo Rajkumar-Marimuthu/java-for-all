@@ -1,5 +1,4 @@
 package com.rojatech.ch03.java8.optional;
-import lombok.Data;
 
 import java.util.List;
 import java.util.Optional;

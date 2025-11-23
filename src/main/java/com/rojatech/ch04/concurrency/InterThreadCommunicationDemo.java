@@ -2,7 +2,7 @@ package com.rojatech.ch04.concurrency;
 
 public class InterThreadCommunicationDemo {
 	public static void main(String[] args) {
-		MyThread mt = new MyThread();
+		MyRunnable mt = new MyRunnable();
 		Thread mtt = new Thread(mt);
 		mtt.start();
 		synchronized(mt) {

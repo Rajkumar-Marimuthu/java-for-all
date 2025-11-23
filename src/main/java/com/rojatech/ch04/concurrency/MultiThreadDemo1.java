@@ -28,7 +28,7 @@ class Hello
 		}
 	}
 }
-public class MultiThreadDemo {
+public class MultiThreadDemo1 {
 
 	public static void main(String[] args) {
 		long startTime = System.currentTimeMillis();
