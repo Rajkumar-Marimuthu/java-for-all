@@ -4,15 +4,15 @@ public class VirtualThreadDemo1 {
 
     public static void main(String[] args) {
         Runnable task = () -> {
-            System.out.println("Virtual Thread: " + Thread.currentThread().getName());
+            System.out.println("Virtual Thread: " + Thread.currentThread());
         };
 
-//        Thread virtualThread = Thread.ofVirtual().start(task);
-//
-//        try {
-//            virtualThread.join();
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        Thread virtualThread = Thread.ofVirtual().start(task);
+
+        try {
+            virtualThread.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
