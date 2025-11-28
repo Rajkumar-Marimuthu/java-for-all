@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class ConcurentHashMapDemo extends Thread {
+public class ConcurrentHashMapDemo extends Thread {
 	static 	Map<String, String> coursesRating = new ConcurrentHashMap<>();
 
 	@Override
@@ -19,7 +19,7 @@ public class ConcurentHashMapDemo extends Thread {
 	
 	public static void main(String[] args) {
 	
-	ConcurentHashMapDemo th = new ConcurentHashMapDemo();
+	ConcurrentHashMapDemo th = new ConcurrentHashMapDemo();
 	th.start();
 	
 	coursesRating.put("Java", "10.0");
