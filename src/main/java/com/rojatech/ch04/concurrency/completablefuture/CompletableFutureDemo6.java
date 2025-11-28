@@ -32,7 +32,7 @@ public class CompletableFutureDemo6 {
             return 0;
         }), Integer::sum);
 
-       // future.complete(125); // Manually complete the future with a specific value
+        // future.complete(125); // Manually complete the future with a specific value
 
         System.out.println("Doing other tasks while waiting for the loyalty points...");
         // Block and get the final result

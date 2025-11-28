@@ -3,7 +3,7 @@ package com.rojatech.ch04.concurrency.completablefuture;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
-public class CompletableFuture7 {
+public class CompletableFutureDemo8 {
     public static void main(String[] args) {
         final String customerCode = "";
 
@@ -20,13 +20,9 @@ public class CompletableFuture7 {
                         }
                         return 100; // Simulated loyalty points
                     }
-                }).handle((result, ex) -> {
-            if (ex != null) {
-                System.out.println("Exception occurred: " + ex.getMessage());
-                return 0; // Default value in case of exception
-            } else {
-                return result;
-            }
+                }).exceptionally(ex -> {
+            System.out.println("Exception occurred: " + ex.getMessage());
+            return 0; // Default value in case of exception
         });
         System.out.println("Doing other tasks while waiting for the loyalty points...");
         Integer finalPoints = future.join();
